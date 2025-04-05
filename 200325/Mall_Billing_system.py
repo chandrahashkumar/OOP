@@ -14,12 +14,14 @@ class BillingSystem:
         print(f"Total Price: {self.cal_price()}")
         print("Thank you for shopping!")
 
-Ram = BillingSystem("Shoes",1, 1300)
-Kal = BillingSystem("Footwear",1, 380)
-Sita = BillingSystem("Hanky",2, 120)
+product_list = []
+product_n = int(input("Enter the number of products: "))
+for i in  range(product_n):
+    product_name = input("Enter product name: ")
+    product_price = float(input("Enter product per unit price: "))
+    product_quantity = int(input("Enter product quantity: "))
+    product = BillingSystem(product_name,product_price,product_quantity)
+    product_list.append(product)
 
-Ram.generate_bill()
-print("................")
-Kal.generate_bill()
-print("................")
-Sita.generate_bill()
+for product in product_list:
+
