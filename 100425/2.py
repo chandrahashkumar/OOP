@@ -1,5 +1,3 @@
-from typing import final
-
 a = input("Enter two number: ").split()
 try:
     c = int(a[0]) + int(a[1])
