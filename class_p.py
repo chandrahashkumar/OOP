@@ -22,32 +22,12 @@
 # print(acc1.bal)
 # print(acc1.acc)
 
-# class hm:
-#     '''i love hm''' #documentation string
-#     a = 5
-# print(hm.__doc__)
-# help(hm)
-# help(list)
 
 
-# def sum_num(a,b):
-#     ''' this method sum two numbers'''
-#     return a+b
-#
-# print(sum_num.__doc__)
-# print("---------------")
-# help(sum_num)
 
-'''class Car:
-    def initi(self, Br,cl,md):
-        self.Br = Br
-        self.cl = cl
-        self.md = md
-        print(id(self))
-    def disp(self):
-        print(self.Br,self.cl,self.md)
-c = Car()
-c.initi("Tata",'RED',"Nano")c.disp()'''
+
+
+
 
 class hunam_body:
     def __init__(self,eye,mouth,nose):
