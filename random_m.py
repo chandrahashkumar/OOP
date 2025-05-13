@@ -8,5 +8,3 @@ print(random.choice(my_list))
 random.shuffle(my_list)
 print(my_list)
 print(random.sample(my_list, k=2))
-for i in range(0,20,2):
-    print(i)
