@@ -8,16 +8,22 @@ ors = con.cursor()
 # for d in data:
 #     print(d)
 #     con.commit()
-ors.execute("Delete from Demo Where Name = 'Name'")
-ors.execute("Select * from Demo")
-data = ors.fetchall()
-for d in data:
-    print(d)
-
-# ors.execute("SELECT * FROM Students")
+# ors.execute("Delete from Demo Where Name = 'Name'")
+# ors.execute("Select * from Demo")
 # data = ors.fetchall()
 # for d in data:
-#     print(d)
+# #     print(d)
+# ors.execute("USE DEMO")
+s = int(input("Enter number of students you want to enter: "))
+for i in range(s):
+    PRN = int(input("Enter PRN: "))
+    Name = input("Enter Name: ")
+# ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES ({PRN},{Name})")
+    ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES('{PRN}','{Name}')")
+
+ors.execute("SELECT * FROM Demo")
+data = ors.fetchall()
+print(data)
 # data = ors.fetchone()
 # fata = ors.fetchone()
 # print(data)
