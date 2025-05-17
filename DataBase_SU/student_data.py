@@ -18,7 +18,7 @@ while True:
             Email = input("Enter Email: ")
             Mobile = int(input("Enter Mobile Number: "))
             Admission_Date = input("Enter Admission Date(YYYY-MM-DD): ")
-            ors.execute(f"INSERT INTO STUDENT_DATA(PRN,Name,Sex,Branch,Email_ID,Mobile_Number,Admission_Date) VALUES('{PRN}','{Name}','{Sex}','{Branch}','{Email}','{Mobile}','{Admission_Date}') ")
+            ors.execute(f"INSERT INTO STUDENT_DATA(PRN,Name,Sex,Branch,Email_ID,Mobile_Number,Admission_Date) VALUES ('{PRN}','{Name}','{Sex}','{Branch}','{Email}','{Mobile}','{Admission_Date}') ")
 
     if choice == 2:
         ors.execute("SELECT * FROM STUDENT_DATA")
