@@ -83,6 +83,8 @@ while True:
             cursor.execute(quary)
             db.commit()
             print("Data updated successfully!")
+        elif up == 8:
+            break
     elif choice == 4:
         PRN = int(input("Enter PRN to delete: "))
         quary = f"DELETE FROM STUDENT_DATA WHERE PRN = '{PRN}'"
