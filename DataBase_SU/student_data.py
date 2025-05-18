@@ -85,6 +85,8 @@ while True:
             print("Data updated successfully!")
         elif up == 8:
             break
+        else:
+            print("Invalid choice try again")
     elif choice == 4:
         PRN = int(input("Enter PRN to delete: "))
         quary = f"DELETE FROM STUDENT_DATA WHERE PRN = '{PRN}'"
@@ -96,3 +98,5 @@ while True:
         db.close()
         print("Thanks for using our service")
         break
+    else:
+        print("Invalid choice try again")
