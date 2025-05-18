@@ -14,16 +14,17 @@ ors = con.cursor()
 # for d in data:
 # #     print(d)
 # ors.execute("USE DEMO")
-s = int(input("Enter number of students you want to enter: "))
-for i in range(s):
-    PRN = int(input("Enter PRN: "))
-    Name = input("Enter Name: ")
-# ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES ({PRN},{Name})")
-    ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES('{PRN}','{Name}')")
+# s = int(input("Enter number of students you want to enter: "))
+# for i in range(s):
+#     PRN = int(input("Enter PRN: "))
+#     Name = input("Enter Name: ")
+# # # ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES ({PRN},{Name})")
+#     ors.execute(f"INSERT INTO Demo (PRN,Name) VALUES ('{PRN}','{Name}')")
 
 ors.execute("SELECT * FROM Demo")
 data = ors.fetchall()
 print(data)
+ors.close()
 # data = ors.fetchone()
 # fata = ors.fetchone()
 # print(data)
