@@ -40,7 +40,7 @@ while True:
             print(d)
     elif choice == 3:
         PRN = int(input("Enter PRN to update: "))
-        up = int(input("UPDATE\n1. Name\n2. Sex\n3. Branch\n4. Email\n5. Mobile\n6.Date of Birth\n7. Address\nEnter your choice: "))
+        up = int(input("UPDATE\n1. Name\n2. Sex\n3. Branch\n4. Email\n5. Mobile\n6.Date of Birth\n7. Address\n8. Exit\nEnter your choice: "))
         if up == 1:
             Name = input("Enter New Name: ")
             quary = f"UPDATE STUDENT_DATA SET NAME = '{Name}' WHERE PRN = '{PRN}'"
