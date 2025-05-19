@@ -1,25 +1,15 @@
 import mysql.connector
-con =mysql.connector.connect(host='localhost',database='universitydb',user='root',password='Kali@2022$')
+import password_
+con =mysql.connector.connect(host='localhost',database='universitydb',user='root',password=password_.password)
 ors = con.cursor()
+
 # ors.execute("Create Table Demo(PRN BIGINT PRIMARY KEY,Name VARCHAR(50))")
-# ors.execute("Insert into Demo(PRN,Name) Values (41029,'Nikhil')")
-# ors.execute('Select * from Demo')
-# data = ors.fetchall()
-# for d in data:
-#     print(d)
-#     con.commit()
-# ors.execute("Delete from Demo Where Name = 'Name'")
-# ors.execute("Select * from Demo")
-# data = ors.fetchall()
-# for d in data:
-# #     print(d)
-# ors.execute("USE DEMO")
-# s = int(input("Enter number of students you want to enter: "))
-# for i in range(s):
-#     PRN = int(input("Enter PRN: "))
-#     Name = input("Enter Name: ")
-# # # ors.execute(f"INSERT INTO Demo(PRN,Name) VALUES ({PRN},{Name})")
-#     ors.execute(f"INSERT INTO Demo (PRN,Name) VALUES ('{PRN}','{Name}')")
+s = int(input("Enter number of students you want to enter: "))
+for i in range(s):
+    PRN = int(input("Enter PRN: "))
+    Name = input("Enter Name: ")
+    ors.execute(f"INSERT INTO Demo (PRN,Name) VALUES ('{PRN}','{Name}')")
+    con.commit()
 
 ors.execute("SELECT * FROM Demo")
 data = ors.fetchall()
