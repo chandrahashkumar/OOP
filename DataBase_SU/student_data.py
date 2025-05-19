@@ -1,8 +1,9 @@
 import mysql.connector
+import password_
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Kali@2022$",
+    password=password_.password,
     database="universitydb"
 )
 cursor = db.cursor()
