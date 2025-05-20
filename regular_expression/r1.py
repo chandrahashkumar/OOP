@@ -1,8 +1,7 @@
 import re
 
-with open('AI.txt','r') as f:
-    text = f.read()
-    # print(re.findall('AI',text))
-for word in text:
-    re.search('^Artificial',text)
-    print(word)
+file = open('AI.txt',)
+for line in file:
+    line = line.rstrip()
+    if re.search('^Artificial',line):
+        print(line)
