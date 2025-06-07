@@ -52,5 +52,38 @@ Person = {"Name":"Ram","Age":19,"City": "Bhagalpur"}
 # print(difference_set) # set()
 # print(sym_diff_set) # {7}
 
-dict_k = dict()
-print(type(dict_k))
+# dict_k = dict()
+# print(type(dict_k))
+
+# a = [1,2,3,4,5,6,7]
+# # print(a[1:6:-1])
+# # print(a[1:6][::-1])
+# b = a
+# b[2]=10
+# # c= a[:]
+# c = a.copy()
+# c[1] = 100
+# print(a)
+# print(b)
+# print(c)
+
+# import copy
+#
+# #Original list with nested list
+# original_list = [1, 2, [3, 4]]
+#
+# #Shallow copy
+# shallow_copy = original_list.copy()
+#
+# #Deep copy
+# deep_copy = copy.deepcopy(original_list)
+#
+# #Modifying the nested list
+# shallow_copy[2][0] = 5
+# deep_copy[2][1] = 6
+#
+# print("Original List:", original_list)
+# print("Shallow Copy:", shallow_copy)
+# print("Deep Copy:", deep_copy)
+
+
